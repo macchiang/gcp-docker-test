@@ -9,7 +9,7 @@ git add .
 echo "git commit..."
 git commit -m "test $TAG"
 echo "git tag..."
-git tag -a $TAG
+git tag -a $TAG -m "this a test"
 echo "push to remote"
 git push --tags
 echo "Waiting 15 secs..."
