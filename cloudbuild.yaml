@@ -12,7 +12,4 @@ steps:
     - us.gcr.io/$PROJECT_ID/$REPO_NAME:$TAG_NAME
     - env:
       - 'CLOUDSDK_COMPUTE_ZONE=us-east1-b'
-      - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'
-images:
-  - 'us.gcr.io/$PROJECT_ID/$REPO_NAME:$TAG_NAME'
-tags: ['$TAG_NAME']          
+      - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'       
