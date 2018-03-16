@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Generate index.html..."
-echo "Hello guys...This the CI test on GCP!"
-echo "Build:" `date`
+echo "Hello guys...This the CI test on GCP!" > index.html
+echo "Build:" `date` >> index.html
 TAG="release"`date +"%Y%m%d%H%M%S"`
 echo "Generate release tag: $TAG"
 echo "git add changes..."
