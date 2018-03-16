@@ -1,0 +1,25 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  gcp-docker-test
+spec:
+  selector:
+    app:  gcp-docker-test
+  type:  LoadBalancer
+  ports:
+  - port:  80
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: gcp-docker-test
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: gcp-docker-test 
+    spec:
+      containers:
+      - name: gcp-docker-test
+        image: us.gcr.io/easyship-test/gcp-docker-test:v1
