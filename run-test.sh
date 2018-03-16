@@ -12,6 +12,6 @@ echo "git tag..."
 git tag -a $TAG -m "this a test"
 echo "push to remote"
 git push --tags
-echo "Waiting 15 secs..."
-sleep 15
+echo "Waiting 30 secs..."
+sleep 30
 open http://35.229.26.224/
