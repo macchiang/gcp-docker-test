@@ -1,2 +1,2 @@
 # gcp-docker-test
-just run start-test.sh on your macbook!!
+just run run-test.sh on your macbook!!
