@@ -1,5 +1,7 @@
 #!/bin/bash
-echo "Generate index.html..."
+echo "Show old index.html"
+open http://35.229.26.224/
+echo "Generate new index.html..."
 echo "Hello guys...This the CI test on GCP!" > index.html
 echo "Build:" `date` >> index.html
 TAG="release"`date +"%Y%m%d%H%M%S"`
