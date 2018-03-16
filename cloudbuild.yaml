@@ -4,10 +4,9 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push','us.gcr.io/$PROJECT_ID/${_REPO}:TAG_NAME']  
   - name: 'gcr.io/cloud-builders/kubectl'
-    entrypoint: bash
     args:
-    - '-c'
-    - ls
+    - get
+    - deployment
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=us-east1-b'
       - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'     
