@@ -9,7 +9,7 @@ steps:
     - image
     - deployment
     - ${_REPO}
-    - ${_REPO}=us.gcr.io/$PROJECT_ID/${_REPO}:$TAG_NAME
+    - ${_REPO}=us.gcr.io/$PROJECT_ID/${_REPO}:TAG_NAME
     - env:
       - 'CLOUDSDK_COMPUTE_ZONE=us-east1-b'
       - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'       
