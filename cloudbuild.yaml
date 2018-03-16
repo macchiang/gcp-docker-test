@@ -5,11 +5,8 @@ steps:
     args: ['push','us.gcr.io/$PROJECT_ID/${_REPO}:TAG_NAME']  
   - name: 'gcr.io/cloud-builders/kubectl'
     args:
-    - set
-    - image
+    - get
     - deployment
-    - ${_REPO}
-    - ${_REPO}=us.gcr.io/$PROJECT_ID/${_REPO}:TAG_NAME
     - env:
       - 'CLOUDSDK_COMPUTE_ZONE=us-east1-b'
       - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-1'       
