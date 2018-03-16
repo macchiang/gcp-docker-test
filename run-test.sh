@@ -11,7 +11,7 @@ git commit -m "test $TAG"
 echo "git tag..."
 git tag -a $TAG -m "this a test"
 echo "push to remote"
-git push --tags
+git push --follow-tags
 echo "Waiting 30 secs..."
 sleep 30
 open http://35.229.26.224/
